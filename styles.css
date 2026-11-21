@@ -638,6 +638,58 @@ html.light .icon-sun {
   text-decoration: underline;
 }
 
+/* ============ Experience ============ */
+.experience {
+  background: var(--bg-alt);
+}
+.experience-card {
+  max-width: 860px;
+  padding: 32px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+.experience-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+.experience-role {
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.experience-company {
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+.experience-employer,
+.experience-dates {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+.experience-responsibilities {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.experience-responsibilities li {
+  position: relative;
+  padding-left: 24px;
+  color: var(--text-muted);
+}
+.experience-responsibilities li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 700;
+}
+
 /* ============ About ============ */
 .about-inner {
   display: grid;
@@ -991,6 +1043,13 @@ textarea {
   }
   .contact-form {
     padding: 24px;
+  }
+  .experience-card {
+    padding: 24px;
+  }
+  .experience-heading {
+    flex-direction: column;
+    gap: 8px;
   }
 }
 
